@@ -17,7 +17,7 @@ Using the credit dataset from LendingClub, a peer-to-peer lending services compa
 
 ## Results
 
-Overall, this process included six machine learning models and, in the details below, I will outline the balanced accuracy scores, the precision scores and recall scores of each. After the csv file was cleaned, 68,817 loans remained. Below are the counts of the loan status. 
+Overall, this process included six machine learning models and, in the details below, I will outline the balanced accuracy scores, the precision scores and recall scores of each. After the csv file was cleaned, 68,817 loans remained. Below are the counts of the loan status, divided between "high risk" and "low risk". 
 
 <sub> Loan Status Origin Count</sub>
 
@@ -107,7 +107,7 @@ Overall, this process included six machine learning models and, in the details b
 
 
 * **Precision and Recall Scores**
-  - Fallin in line with all the previous models, the "high risk" precision is at 1%, with the second highest recall at 79%. 
+  - Falls in line with all the previous models, the "high risk" precision is at 1%, with the second highest recall at 79%. 
   - The "low risk" precision is 100%, with the recall at 54%.
 
 ![smoteenn_confusion_matrix](https://github.com/Kelfang/Credit_Risk_Analysis/blob/main/images/smoteenn_combo_sampling/smoteenn_confusion_matrix.png)
