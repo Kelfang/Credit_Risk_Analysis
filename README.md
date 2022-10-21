@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-The motivation behind this project is to utilize machine learning and statistical reasoning to solve a real-world challenge: credit card risk. 
+The motivation behind this project is to utilize machine learning and statistical reasoning to solve a real-world challenge: personal credit risk. 
 
-Using the credit card dataset from LendingClub, a peer-to-peer lending services company, I deployed the use of multiple algorithms and models to determine which, if any, should be used to predict credit risk. 
+Using the credit dataset from LendingClub, a peer-to-peer lending services company, I deployed the use of multiple algorithms and models to determine which, if any, should be used to predict credit risk. 
 
 ## Resources
 * Python 
@@ -163,6 +163,18 @@ Overall, this process included six machine learning models and, in the details b
 
 
 ## Summary 
+To recap, I’m showcasing the model performance below and focusing on the “high risk” scoring. You’ll see that this list is descending, with top performers leading the way. 
+
+ - **Easy Ensemble AdaBoost Classifier:** 93.2% accuracy, 9% precision, 92% recall, 16% F1.
+ - **Balanced Random Forest Classifier:** 78.9% accuracy, 3% precision, 70% recall, 6% F1.
+ - **SMOTEENN Combination Sampling:** 66.7% accuracy, 1% precision, 79% recall, 2% F1.
+ - **SMOTE Oversampling:** 65.9% accuracy, 1% precision, 62% recall, 2% F1.
+ - **Random Oversampling:** 63.8% accuracy, 1% precision, 66% recall, 2% F1.
+ - **Undersampling – ClusterCentroids:** 54.4% accuracy, 1% precision, 69% recall, 1% F1.
+
+ The model that performed most favorably among the six presented was the Easy Ensemble AdaBoost Classifier. With the balanced accuracy score siting at 93.2% and the F1 score at 16%, it easily outperforms the others across the board. 
+
+After the data was cleaned, it should be noted that the number of “low risk” accounts was significantly higher than the “high risk” accounts. In fact, there were only 347 accounts classed as “high risk” out of 68,817, which is less than 1%. I would strongly recommend that they run this model over a longer timeframe to see more volume and further test the results. Additionally, like many other factors, time of year can play a part in loan performance so focusing on a single quarter can also skew the results. 
 
 
 
